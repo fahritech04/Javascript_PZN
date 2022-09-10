@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>function return</title>
+</head>
+<body>
+ <script>
+  // function nama(namaDepan, namaBelakang){
+  //  let panggil = `hello ${namaDepan} ${namaBelakang}`;
+  //  return panggil;
+  // }
+
+  // let result = nama("Muhammad Raihan ", "Fahrifi");
+  // document.writeln(`${result}`);
+
+  function ujian(nilai){
+   if(nilai >= 90){
+    return "A";
+   }else if(nilai >= 80){
+    return "B";
+   }else if(nilai >= 70){
+    return "C";
+   }else if(nilai >= 60){
+    return "D";
+   }
+  }
+
+  let panggil = ujian(89);
+  document.writeln(`Hasil ujian bernilai : ${panggil}`);
+ </script>
+</body>
+</html>

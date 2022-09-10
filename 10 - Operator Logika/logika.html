@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Logika pada Javascript</title>
+</head>
+<body>
+ <script>
+  let nilaiUjian = 80;
+  let nilaiAbsen = 80;
+
+  let lulusUjian = nilaiUjian > 75;
+  let lulusAbsen = nilaiAbsen > 75;
+
+  let lulus = lulusUjian && lulusAbsen;
+  if(lulus){
+   document.writeln("Lulus Sekolah");
+  } else {
+   document.writeln("Tidak lulus sekolah");
+  }
+ </script>
+</body>
+</html>

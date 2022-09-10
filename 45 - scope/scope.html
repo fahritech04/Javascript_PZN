@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Scope pada javascript</title>
+</head>
+<body>
+ <script>
+  // Global scope
+  // let hitung = 0;
+
+  // function hitMe(){
+  //  hitung++;
+  // }
+
+  // hitMe();
+  // hitMe();
+  // hitMe();
+  // hitMe();
+
+  // document.writeln(hitung);
+
+  // Local scope
+  // function pertama(){
+  //  let first = "Pertama";
+  // }
+
+  // function kedua(){
+  //  let second = "Kedua";
+  // }
+
+  // pertama();
+  // kedua();
+
+  // console.log(first);
+  // console.log(second);
+
+
+  // nested function scope
+  function pertama(){
+   let firstVariable = "Fahrifi";
+
+   function kedua(){
+    document.writeln(`${firstVariable}`);
+   }
+
+   kedua();
+  }
+
+  pertama();
+ </script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Document</title>
+</head>
+<body>
+ <script>
+  // arrow function
+  // let sayHello = (name) => {
+  //  let say = `Halo, perkenalkan namaku adalah ${name}`;
+  //  document.writeln(say);
+  // }
+
+  // sayHello("Muhammad Raihan Fahrifi");
+
+  // let panggil = (nama) => {
+  //  document.writeln(`Halo, perkenalkan namaku adalah ${nama}`);
+  // }
+
+  // panggil("Muhammad Raihan Fahrifi");
+
+  let ujian = (nilai) => {
+   if(nilai >= 90){
+    return "Nilai A";
+   } else if(nilai >= 80){
+    return "Nilai B";
+   } else if(nilai >= 70){
+    return "Nilai C";
+   } else if(nilai >= 60){
+    return "Nilai D";
+   }
+  }
+
+  let panggil = ujian(90);
+  document.writeln(panggil);
+ </script>
+</body>
+</html>

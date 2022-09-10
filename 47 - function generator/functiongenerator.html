@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Function generator pada javasscript</title>
+</head>
+<body>
+ <script>
+  // function* person(){
+  //  yield "Muhammad";
+  //  yield "Raihan";
+  //  yield "Fahrifi";
+  // }
+
+  // const names = person();
+  // for(let nama of names){
+  //  document.writeln(nama);
+  // }
+
+  // function generator kompleks
+   function* ganjil(value){
+    for(let i = 1; i <= value; i++){
+     if(i % 2 === 1){
+      yield i;
+     }
+    }
+   }
+
+   let angkaGanjil = ganjil(100);
+   for(let bilangan of angkaGanjil){
+    document.writeln(`<p>Angka ganjil ${bilangan}</p>`);
+   }
+ </script>
+</body>
+</html>
